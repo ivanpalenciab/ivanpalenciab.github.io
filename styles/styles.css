@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.header-name{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu {
+    background-color: black;
+    display: inline-block;
+    height: 25px;
+    
+}
+
+footer{
+    background-color: black;
+}
+.menu-social-network{
+    margin-left: auto;
+}
