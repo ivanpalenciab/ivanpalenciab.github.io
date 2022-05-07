@@ -1,22 +1,70 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(01, 03, 26);
+    color: rgb(255, 255, 255);
 }
 .header-name{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+
+/* aqui estan todos los estilos incluidos dentro del main*/ 
+main{
+    margin-left:10px;
+    margin-right:10px;
+    background-color:rgb(36, 191, 119) ;
+    color:rgb(01, 03, 26) ;
+}
+.about-me-title{
+    text-align: center;
+}
+.my_imagen{
+    margin-left: 0;
+    object-fit: contain;
+}
+.content{
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 
 .menu {
-    background-color: black;
+    background-color: rgb(01, 03, 26);
     display: inline-block;
     height: 25px;
     
 }
 
+
+/*A partir de aqui estan los estilos del footer*/
+
 footer{
-    background-color: black;
+    background-color: rgb(01, 03, 26);
+    color: rgb(36, 191, 119)
 }
 .menu-social-network{
     margin-left: auto;
+}
+.menu-social-network ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: right;
+}
+.menu-social-network a{ 
+    color:rgb(36, 191, 119);
+    text-decoration: none;
+    display:block;
+    padding: 12px 12px;
+}
+.separator{padding:15px;
+
+}
+.menu-social-network a:hover{
+    background-color:rgb(36, 191, 119);
+    color:rgb(01, 03, 26) ;
 }
