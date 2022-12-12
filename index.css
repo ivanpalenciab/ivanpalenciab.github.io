@@ -1,22 +1,33 @@
-.header{
+#header{
     width: 100%;
     min-height: 100vh;
-    background-image: url("Img/hero-bg.jpg");
+    background: url("Img/hero-bg.jpg") top center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.header::before{
+#header:before{
     content: '';
     width: 100%;
     min-height: 100vh;
+    background: rgba(5, 13, 24, 0.3);
     position: absolute;
+    bottom:0;
     top:0;
     left: 0;
-    background: rgba(5, 13, 24, 0.3);
+    right: 0;
+    
 }
+
+#header #presentation{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+/* rgba(5, 13, 24, 0.1)*/
 
  .bg-light{
     /* position: fixed; */
@@ -35,6 +46,21 @@
         background-color:transparent!important;
     }
     .bg-light a{
-        color: white;}
+        color: rgb(255, 255, 255);}
     
+}
+
+.text-header{
+    color: rgb(255, 255, 255);
+   min-height: 90vh;
+}
+
+.btn-yo{
+    padding: 7px 12px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+.btn-yo:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 4, 4);
 }
