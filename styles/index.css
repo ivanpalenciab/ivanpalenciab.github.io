@@ -70,3 +70,26 @@ main .container{
     margin-top: 100px;
     margin-bottom:50px;
 }
+
+#imagen-separator{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../Img/imagen.jpg") top center ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#imagen-separator:before{
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom:0;
+    top:0;
+    left: 0;
+    right: 0;
+    
+}
