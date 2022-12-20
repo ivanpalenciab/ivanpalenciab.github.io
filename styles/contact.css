@@ -1,7 +1,7 @@
 #header{
     width: 100%;
     min-height: 100vh;
-    background: url("Img/hero-bg.jpg") top center;
+    background: url("../Img/contact.png") top center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,4 +63,9 @@
 .btn-yo:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(212, 4, 4);
+}
+
+/*Main styles*/
+main .container{
+    margin-top: 100px;
 }
