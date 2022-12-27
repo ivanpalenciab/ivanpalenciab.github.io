@@ -66,6 +66,27 @@
 }
 
 /*Main styles*/
-main .container{
-    margin-top: 100px;
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
+
+main div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#email{
+   display: inline;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* footer styles */
+footer{
+    margin-top: 20px;
+  }
+  /* finish footer styles */
