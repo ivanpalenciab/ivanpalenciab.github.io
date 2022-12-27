@@ -8,7 +8,7 @@
     background-attachment: fixed;
 }
 
-#header:before{
+#header::before{
     content: '';
     width: 100%;
     min-height: 100vh;
@@ -79,4 +79,33 @@ main .container{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
+
+#imagen-separator::before{
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;  
+}
+
+#imagen-separator #info{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#proyects{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#proyects h1{
+    margin-bottom: 20px;
+}
+
+
+
+
