@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Rozha+One&display=swap');
 
+h1{
+    font-family: 'Rozha One', serif;
+}
+
+p{
+    font-family: 'Questrial', sans-serif;  
+}
+#header li{
+    font-family: 'Rozha One', serif;
+}
+
 header{
     margin-bottom: 50px;
 }
+
 
 main img{
     margin-top: 20px;
@@ -14,7 +26,6 @@ section{
     margin-top: 20px;
 }
 
-#header li{
-    font-family: 'Rozha One', serif;
+main #content{
+    font-size: 20px;
 }
-
