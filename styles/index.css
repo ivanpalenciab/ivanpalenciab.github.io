@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Rozha+One&display=swap');
+
+h1{
+    font-family: 'Rozha One', serif;
+}
+
+p{
+    font-family: 'Questrial', sans-serif;
+}
+h3{
+    font-family: 'Questrial', sans-serif;
+}
+
+
 #header{
     width: 100%;
     min-height: 100vh;
@@ -6,6 +21,9 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+#header li{
+    font-family: 'Rozha One', serif;
 }
 
 #header::before{
@@ -65,10 +83,23 @@
     background-color: rgb(212, 4, 4);
 }
 
+
 /*Main styles*/
 main .container{
     margin-top: 100px;
-    margin-bottom:50px;
+    margin-bottom:200px;
+}
+
+#phrase  h5{
+    text-align: center;
+    font-family: 'Rozha One', serif;
+    font-size: 30px;
+}
+
+#phrase p{
+    text-align: center;
+    font-family: 'Rozha One', serif;
+    font-size: 20px;
 }
 
 #imagen-separator{
@@ -97,6 +128,15 @@ main .container{
     min-width: 300px;
 }
 
+#imagen-separator p{
+    font-size: 18px;
+}
+
+#imagen-separator .btn{
+    background-color: red;
+    color: white;
+}
+
 #proyects{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -104,6 +144,10 @@ main .container{
 
 #proyects h1{
     margin-bottom: 20px;
+}
+
+footer ul{
+    margin-right: 50px;
 }
 
 

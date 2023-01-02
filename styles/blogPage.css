@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+h5{
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+}
+h1{
+    font-family: 'Rozha One', serif;
+}
+
+p{
+    font-family: 'Questrial', sans-serif;
+}
+
 #header{
     width: 100%;
     min-height: 100vh;
@@ -55,6 +70,7 @@
    min-height: 90vh;
 }
 
+
 .btn-yo{
     padding: 7px 12px;
     color: rgb(255, 255, 255);
@@ -65,8 +81,23 @@
     background-color: rgb(212, 4, 4);
 }
 
+#header li{
+    font-family: 'Rozha One', serif;
+}
+
 /*Main styles*/
 main{
     margin-top: 100px;
+}
+
+#presentation h1{
+    font-family: 'Rozha One', serif;
+    font-size: 50px;
+}
+
+#presentation p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
