@@ -29,3 +29,17 @@ section{
 main #content{
     font-size: 20px;
 }
+
+/* Footer Styles */
+footer{
+    background-color: #0d0d0d;
+}
+
+footer ul{
+    margin-right: 50px;
+}
+
+footer {
+    color: #F20707;
+}
+/* finish footer styles */

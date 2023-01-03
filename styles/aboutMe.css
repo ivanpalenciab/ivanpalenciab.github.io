@@ -70,12 +70,12 @@ h1{
 
 .btn-yo{
     padding: 7px 12px;
-    color: rgb(255, 255, 255);
-    background-color: red;
+    background-color:  #F20707;
+    color: white;
 }
 .btn-yo:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(212, 4, 4);
+    background-color: #8c0404;
 }
 
 #header li{
@@ -95,3 +95,17 @@ main .container{
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
 }
+
+/* Footer Styles */
+footer{
+    background-color: #0d0d0d;
+}
+
+footer ul{
+    margin-right: 50px;
+}
+
+footer {
+    color: #F20707;
+}
+/* finish footer styles */

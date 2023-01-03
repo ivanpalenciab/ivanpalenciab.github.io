@@ -102,8 +102,16 @@ a{
     text-decoration: none;
 }
 
-/* footer styles */
+/* Footer Styles */
 footer{
-    margin-top: 20px;
-  }
-  /* finish footer styles */
+    background-color: #0d0d0d;
+}
+
+footer ul{
+    margin-right: 50px;
+}
+
+footer {
+    color: #F20707;
+}
+/* finish footer styles */
