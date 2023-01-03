@@ -9,7 +9,8 @@ h1{
 #header{
     width: 100%;
     min-height: 100vh;
-    background: url("../img/img1.jpg") top center;
+    /* background: url("../img/img1.jpg") top center; */
+    background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_960_720.jpg") top center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
