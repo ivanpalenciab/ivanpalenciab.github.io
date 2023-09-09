@@ -101,6 +101,11 @@ main{
     margin-bottom: 20px;
 }
 
+#blog_content a{
+text-decoration: none;
+color: black;
+}
+
 /* Footer Styles */
 footer{
     background-color: #0d0d0d;
