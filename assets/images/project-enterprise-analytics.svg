@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="480" fill="#0F172A" rx="12" />
+  <rect x="1" y="1" width="798" height="478" rx="11" stroke="#334155" stroke-width="2" />
+  
+  <!-- App Header -->
+  <rect x="0" y="0" width="800" height="50" fill="#1E293B" rx="12" />
+  <rect x="0" y="38" width="800" height="12" fill="#1E293B" />
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#334155" stroke-width="1" />
+  <circle cx="28" cy="25" r="6" fill="#EF4444" opacity="0.8" />
+  <circle cx="48" cy="25" r="6" fill="#F59E0B" opacity="0.8" />
+  <circle cx="68" cy="25" r="6" fill="#10B981" opacity="0.8" />
+  <rect x="100" y="14" width="220" height="22" rx="6" fill="#0F172A" />
+  <text x="114" y="29" fill="#94A3B8" font-size="11" font-weight="500">analytics.internal.app / kpi-overview</text>
+  
+  <rect x="650" y="14" width="120" height="22" rx="6" fill="#2AA539" fill-opacity="0.15" stroke="#2AA539" stroke-width="1" />
+  <circle cx="664" cy="25" r="3.5" fill="#2AA539" />
+  <text x="674" y="29" fill="#2AA539" font-size="11" font-weight="600">Polars + Dash</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="50" width="180" height="430" fill="#141E33" rx="0" />
+  <line x1="180" y1="50" x2="180" y2="480" stroke="#334155" stroke-width="1" />
+  
+  <text x="24" y="85" fill="#64748B" font-size="10" font-weight="700" letter-spacing="1">MÓDULOS</text>
+  <rect x="16" y="98" width="148" height="32" rx="6" fill="#343265" fill-opacity="0.4" />
+  <rect x="16" y="98" width="4" height="32" rx="2" fill="#2AA539" />
+  <text x="32" y="118" fill="#F8FAFC" font-size="12" font-weight="600">Dashboard Central</text>
+  
+  <text x="32" y="156" fill="#94A3B8" font-size="12">Pipeline Financiero</text>
+  <text x="32" y="190" fill="#94A3B8" font-size="12">Métricas de Ventas</text>
+  <text x="32" y="224" fill="#94A3B8" font-size="12">Costos Operativos</text>
+  <text x="32" y="258" fill="#94A3B8" font-size="12">Modelado de Datos</text>
+  <text x="32" y="292" fill="#94A3B8" font-size="12">Configuración ETL</text>
+
+  <!-- Main Content Cards -->
+  <!-- Top Stat Cards -->
+  <g transform="translate(204, 70)">
+    <rect width="176" height="84" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="16" y="26" fill="#94A3B8" font-size="11" font-weight="500">INGESTA DIARIA</text>
+    <text x="16" y="54" fill="#F8FAFC" font-size="20" font-weight="700">1.84M rows</text>
+    <text x="16" y="72" fill="#2AA539" font-size="11" font-weight="600">↑ 12.4% vs semana ant.</text>
+  </g>
+
+  <g transform="translate(396, 70)">
+    <rect width="176" height="84" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="16" y="26" fill="#94A3B8" font-size="11" font-weight="500">LATENCIA QUERY (P95)</text>
+    <text x="16" y="54" fill="#F8FAFC" font-size="20" font-weight="700">84 ms</text>
+    <text x="16" y="72" fill="#38BDF8" font-size="11" font-weight="600">PostgreSQL + Polars</text>
+  </g>
+
+  <g transform="translate(588, 70)">
+    <rect width="186" height="84" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="16" y="26" fill="#94A3B8" font-size="11" font-weight="500">DISPONIBILIDAD</text>
+    <text x="16" y="54" fill="#F8FAFC" font-size="20" font-weight="700">99.94%</text>
+    <text x="16" y="72" fill="#2AA539" font-size="11" font-weight="600">Pipeline en ejecución</text>
+  </g>
+
+  <!-- Big Chart -->
+  <g transform="translate(204, 174)">
+    <rect width="570" height="180" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="20" y="30" fill="#F8FAFC" font-size="13" font-weight="600">Evolución de Rendimiento y Consolidación de Fuentes</text>
+    <text x="20" y="48" fill="#94A3B8" font-size="11">Carga automatizada desde ERP, CRM y bases relacionales</text>
+
+    <!-- Chart Grid -->
+    <line x1="30" y1="80" x2="540" y2="80" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="30" y1="115" x2="540" y2="115" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="30" y1="150" x2="540" y2="150" stroke="#334155" stroke-dasharray="3 3" />
+
+    <!-- Chart Line 1 (Green) -->
+    <path d="M 40 150 Q 110 130, 180 125 T 320 85 T 440 95 T 530 65" fill="none" stroke="#2AA539" stroke-width="3" />
+    <!-- Gradient Area -->
+    <path d="M 40 150 Q 110 130, 180 125 T 320 85 T 440 95 T 530 65 L 530 160 L 40 160 Z" fill="url(#greenGrad)" opacity="0.2" />
+
+    <!-- Chart Line 2 (Indigo) -->
+    <path d="M 40 135 Q 120 145, 200 130 T 340 115 T 460 110 T 530 100" fill="none" stroke="#818CF8" stroke-width="2" stroke-dasharray="4 4" />
+    
+    <circle cx="530" cy="65" r="4" fill="#2AA539" />
+  </g>
+
+  <!-- Bottom Data Table preview -->
+  <g transform="translate(204, 370)">
+    <rect width="570" height="90" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <rect x="0" y="0" width="570" height="28" fill="#24334A" rx="8" />
+    <rect x="0" y="20" width="570" height="8" fill="#24334A" />
+    <text x="20" y="19" fill="#94A3B8" font-size="10" font-weight="600">ID FUENTE</text>
+    <text x="140" y="19" fill="#94A3B8" font-size="10" font-weight="600">TIPO DE ORIGEN</text>
+    <text x="280" y="19" fill="#94A3B8" font-size="10" font-weight="600">TRANSFORMACIÓN</text>
+    <text x="440" y="19" fill="#94A3B8" font-size="10" font-weight="600">ESTADO</text>
+
+    <text x="20" y="48" fill="#F8FAFC" font-size="11">SRC_FINANCE_01</text>
+    <text x="140" y="48" fill="#94A3B8" font-size="11">PostgreSQL Core</text>
+    <text x="280" y="48" fill="#94A3B8" font-size="11">Polars Aggregation</text>
+    <rect x="440" y="37" width="65" height="18" rx="4" fill="#2AA539" fill-opacity="0.2" />
+    <text x="450" y="50" fill="#2AA539" font-size="10" font-weight="600">Sincronizado</text>
+
+    <text x="20" y="74" fill="#F8FAFC" font-size="11">SRC_SALES_LOGS</text>
+    <text x="140" y="74" fill="#94A3B8" font-size="11">REST API Ingestion</text>
+    <text x="280" y="74" fill="#94A3B8" font-size="11">Cleanse + Deduplicate</text>
+    <rect x="440" y="63" width="65" height="18" rx="4" fill="#2AA539" fill-opacity="0.2" />
+    <text x="450" y="76" fill="#2AA539" font-size="10" font-weight="600">Sincronizado</text>
+  </g>
+
+  <defs>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2AA539" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

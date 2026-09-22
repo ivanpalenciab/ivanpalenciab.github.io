@@ -1,214 +1,1357 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ivan palencia es un administrador de empresas con gran interes por el mundo de los negocios"
-    />
-    <title>Ivan Palencia</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="shortcut icon" href="./Img/foto.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="bootstrap/js/bootstrap.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==================================================================== -->
+  <!-- SEO & METADATOS TÉCNICOS                                             -->
+  <!-- ==================================================================== -->
+  <title>Ivan Palencia | Data · Software · Analytics</title>
+  <meta name="description" content="Portafolio profesional de Ivan Palencia. Especialista en datos, desarrollo de software y analítica de negocio. Construyo soluciones analíticas, APIs, dashboards e integraciones orientadas a resultados.">
+  <meta name="keywords" content="Ivan Palencia, Data Analyst, Data Scientist, Data Engineer, Analytics Engineer, Software Developer, Python, SQL, PostgreSQL, FastAPI, Dash, Business Intelligence, Colombia">
+  <meta name="author" content="Ivan Palencia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ivanpalenciab.github.io/">
 
-  <body>
-    <header class="header" id="header">
-      <!--Hera start the navbar  -->
-      <div class="bg-light" >
-        <div class="container">
-          <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Ivan Palencia</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutMe.html">Sobre mi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blogPage.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contactame</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ivanpalenciab.github.io/">
+  <meta property="og:title" content="Ivan Palencia | Data · Software · Analytics">
+  <meta property="og:description" content="Convierto datos y problemas de negocio en soluciones digitales. Portafolio profesional y catálogo de soluciones.">
+  <meta property="og:image" content="assets/images/ivan.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos principal (Pure CSS3) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================================================================== -->
+  <!-- NAVEGACIÓN PRINCIPAL (CSS-ONLY RESPONSIVE)                           -->
+  <!-- ==================================================================== -->
+  <!-- Checkbox invisible que controla la apertura del menú en pantallas móviles sin JavaScript -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar menú de navegación">
+
+  <header class="header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="brand" aria-label="Ir al inicio - Ivan Palencia">
+        <div class="brand-icon" aria-hidden="true">IP</div>
+        <div class="brand-text">
+          <span class="brand-name">Ivan Palencia</span>
+          <span class="brand-role">Data &amp; Software</span>
         </div>
-      </div>
+      </a>
 
-      <!--Here finish the navbar -->
+      <!-- Botón hamburguesa accesible para móvil (CSS Puro) -->
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Alternar menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-      <div class="text-header d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8" id="presentation">
-              <h1>Ivan Palencia</h1>
-              <h3>Soy un administrador de empresas apasionado por la Tecnología</h3>
-              <!-- <h2>Soy <span> desarrollador backend </span></h2> -->
-              <a href="aboutMe.html" class="btn btn-yo">Acerca de mi</a>
+      <!-- Menú de Enlaces -->
+      <nav class="nav-wrapper" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <a href="#contacto" class="btn btn--primary nav-cta">Hablemos</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ================================================================== -->
+    <!-- HERO SECTION: PROPUESTA DE VALOR DE ALTO IMPACTO                   -->
+    <!-- ================================================================== -->
+    <section id="inicio" class="hero" aria-label="Sección de presentación">
+      <div class="container hero-grid">
+        
+        <!-- Columna de Propuesta de Valor -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            DATA · SOFTWARE · ANALYTICS
+          </div>
+
+          <h1 class="hero-headline">
+            Convierto datos y problemas de negocio en <span>soluciones digitales.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Desarrollo soluciones de datos, software y analítica que ayudan a las organizaciones a transformar información en decisiones y resultados medibles.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn--primary">
+              Ver proyectos
+              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+            <a href="#contacto" class="btn btn--secondary">
+              Hablemos
+              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Indicadores de confianza -->
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <svg class="hero-highlight-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="hero-highlight-text">Negocio + Código</span>
+            </div>
+            <div class="hero-highlight-item">
+              <svg class="hero-highlight-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="hero-highlight-text">Pipelines &amp; Modelos</span>
+            </div>
+            <div class="hero-highlight-item">
+              <svg class="hero-highlight-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="hero-highlight-text">Retorno de Inversión</span>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!--Here finish header-->
 
-    <!--Here Start Main-->
-    <main>
-      <div class="container">
-        <div class="row" id="phrase">
-          <h5> "Tienes que actuar y estar dispuesto a fracasar. Si tienes miedo a fracasar, no vas a llegar muy lejos"</h5>
-          <p> -Steve Jobs </p>
-        </div>
-        <!--Here will be information about blog-->
-        <!-- <section class="row">
-          <h1>Contenido recomendado</h1>
-          <div class="col">Hola</div>
-          <div class = "col">Hola</div>
-        </section>-->
-      </div> 
-          
-        <section id="imagen-separator" class="text-header d-flex align-items-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-8" id="info">
-                  <h1>Negocios y Tecnología</h1>
-                  <p>Tengo una gran pasión por el mundo de los negocios y estudio las formas en que la tecnología puede mejorar la gestión de las empresas. Me encanta el mundo de los datos y siempre ando buscando toda la información que se puede sacar de ellos.
-                  </p>
-                  <a href="aboutMe.html" class="btn">Blog</a>
+        <!-- Columna Visual: Tarjeta de Perfil Profesional -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            
+            <div class="profile-image-wrapper">
+              <!-- Fotografía profesional integrada como elemento secundario -->
+              <img src="assets/images/ivan.jpg" alt="Retrato profesional de Ivan Palencia" class="profile-photo" loading="eager">
+              
+              <div class="profile-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                Disponible para proyectos
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <div class="profile-header">
+                <h2 class="profile-name">Ivan Palencia</h2>
+                <span class="profile-title">Data &amp; Software</span>
+              </div>
+
+              <div class="profile-location">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                Colombia · Remoto / Híbrido
+              </div>
+
+              <div class="profile-meta-strip">
+                <div class="profile-meta-item">
+                  <span class="profile-meta-label">Formación</span>
+                  <span class="profile-meta-value">Adm. Empresas &amp; Tech</span>
+                </div>
+                <div class="profile-meta-item">
+                  <span class="profile-meta-label">Especialidad</span>
+                  <span class="profile-meta-value">Soluciones Analíticas</span>
                 </div>
               </div>
             </div>
-        </section>
-        <!--Proyects section-->
-        <section class="container" id="proyects">
-          <h1>Proyectos</h1>
-          
-         <!--start of Carrousel-->
-         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <img src="Img/personal-web.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Pagina Web Personal</h5>
-                <p>Desarrollo de mi pagina web personal y blog (Aqui donde estas).</p>
-                
-                <a class="btn btn-primary" href="https://github.com/ivanpalenciab/ivanpalenciab.github.io"> Ver Proyecto</a><br>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: SOBRE MÍ                                                  -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: SOBRE MÍ -->
+    <section id="sobre-mi" class="section" aria-label="Sobre mí">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Perfil Profesional</div>
+          <h2 class="section-title">El punto de encuentro entre negocio y tecnología</h2>
+          <p class="section-subtitle">
+            Combino formación administrativa con capacidades avanzadas de desarrollo de software y ciencia de datos.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrativa del Perfil -->
+          <div class="about-text">
+            <p class="about-lead">
+              Mi enfoque combina conocimiento de negocio, análisis de datos y desarrollo de software para construir soluciones que no solamente muestran información, sino que ayudan a utilizarla.
+            </p>
+
+            <p class="about-paragraph">
+              Con formación en <strong>Administración de Empresas</strong> y una sólida trayectoria técnica en <strong>desarrollo de software y analítica de datos</strong>, mi carrera ha evolucionado desde el diagnóstico estratégico organizacional hacia la ingeniería de soluciones digitales prácticas.
+            </p>
+
+            <p class="about-paragraph">
+              Esta combinación me permite entender el trasfondo económico de un problema, formular los requerimientos de información correctos y programar la arquitectura técnica adecuada (desde pipelines ETL y modelos predictivos hasta APIs y dashboards interactivos) sin intermediarios ni pérdida de contexto.
+            </p>
+
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+              <span class="badge badge--accent">Visión Estratégica</span>
+              <span class="badge">Modelado de Datos</span>
+              <span class="badge">Arquitectura Backend</span>
+              <span class="badge">Toma de Decisiones</span>
+            </div>
+          </div>
+
+          <!-- Tarjetas Visuales de Capacidades -->
+          <div class="about-cards-grid">
+            
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="about-card-title">Visión de Negocio</h3>
+              <p class="about-card-desc">
+                Comprensión de procesos operativos, control de costes, rentabilidad y metas estratégicas de la empresa.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <h3 class="about-card-title">Datos &amp; Analítica</h3>
+              <p class="about-card-desc">
+                Extracción, depuración, diseño dimensional de bases de datos y construcción de modelos analíticos accionables.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="about-card-title">Software &amp; APIs</h3>
+              <p class="about-card-desc">
+                Desarrollo de servicios modulares, APIs REST y herramientas que automatizan flujos manuales recurrentes.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="about-card-title">Ejecución &amp; Impacto</h3>
+              <p class="about-card-desc">
+                Orientación estricta a resultados: sistemas confiables que resuelven cuellos de botella y previenen pérdidas.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: PROPUESTA DE VALOR ("LO QUE PUEDO APORTAR")               -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: VALUE PROPOSITION -->
+    <section class="section section--alt" aria-label="Lo que puedo aportar">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Capacidades Estratégicas</div>
+          <h2 class="section-title">Lo que puedo aportar</h2>
+          <p class="section-subtitle">
+            No ofrezco solo lenguajes de programación: ofrezco la capacidad de resolver problemas empresariales concretos mediante tecnología y datos.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          
+          <!-- Pilar 1: Data & Analytics -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Data &amp; Analytics</h3>
+            <p class="pillar-desc">
+              Transformación de datos dispersos en modelos estructurados y tableros analíticos que clarifican la realidad de la organización.
+            </p>
+            <div class="pillar-capabilities">
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Análisis exploratorio &amp; estadística
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Modelamiento de datos &amp; KPIs
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Business Intelligence interactivo
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Machine Learning aplicado
               </div>
             </div>
-            <div class="carousel-item" id="prediccion_cliente">
-              <img src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Prediccion del comportamiento del cliente</h5>
-                <p>Modelo de machine learning para predecir cuanto va a comprar un cliente</p>
-                <a class="btn btn-primary" href="https://github.com/ivanpalenciab/Cookflash"> Ver proyecto</a>
+          </div>
+
+          <!-- Pilar 2: Software -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Software &amp; Backend</h3>
+            <p class="pillar-desc">
+              Construcción de aplicaciones web, servicios y tuberías de integración robustas que aseguran estabilidad y mantenibilidad.
+            </p>
+            <div class="pillar-capabilities">
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Desarrollo de APIs REST rápidas
               </div>
-            </div> 
-             <div class="carousel-item" id="segmentacion">
-              <img src="https://images.pexels.com/photos/7651801/pexels-photo-7651801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Segmentacion De Clientes</h5>
-                <p>Modelo de machine learning para segmentar clientes</p>
-                <a class="btn btn-primary" href="https://github.com/ivanpalenciab/Seg_Clientes"> Ver proyecto</a>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Sistemas de información a medida
               </div>
-            </div> 
-            <div class="carousel-item" id="cookflash">
-              <img src="Img/COOKFLASH.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Cooflash</h5>
-                <p>App para crear y ver recetas. Desarrollada en React, MongoDB y Express</p>
-                <a class="btn btn-primary" href="https://github.com/ivanpalenciab/Prediccion_comportamiento_cliente"> Ver proyecto</a>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Integración y sincronización de datos
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Arquitectura de soluciones escalables
               </div>
             </div>
-            <!-- <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-                <a class="nav-link" href="https://github.com/ivanpalenciab/Cookflash"></a>
-              </div>
-            </div> -->
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+          <!-- Pilar 3: Business -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Business &amp; Procesos</h3>
+            <p class="pillar-desc">
+              Identificación de ineficiencias, fugas financieras y diseño de flujos operativos guiados por métricas de rendimiento.
+            </p>
+            <div class="pillar-capabilities">
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Entendimiento de procesos de negocio
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Auditoría y control de indicadores
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Optimización y mitigación de pérdidas
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Toma de decisiones basada en evidencia
+              </div>
+            </div>
+          </div>
+
+          <!-- Pilar 4: AI -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">AI &amp; Automatización</h3>
+            <p class="pillar-desc">
+              Aprovechamiento pragmático de modelos de lenguaje e inteligencia artificial para consultar bases de conocimiento y automatizar flujos.
+            </p>
+            <div class="pillar-capabilities">
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Integración de LLMs &amp; APIs de IA
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Arquitecturas RAG sobre datos propios
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Agentes para tareas operativas
+              </div>
+              <div class="pillar-cap-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Automatización inteligente de tareas
+              </div>
+            </div>
+          </div>
+
         </div>
-         <!--end of Carrousel-->
-        </section>
-        <!--end of proyects section-->
 
-    </main>
-    <!--Here finish Main-->
-    <!--Here Starts the footer-->
+      </div>
+    </section>
 
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Ivan Palencia, Inc</span>
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: PROYECTOS SELECCIONADOS                                   -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: PROJECTS -->
+    <section id="proyectos" class="section" aria-label="Proyectos seleccionados">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Casos y Soluciones</div>
+          <h2 class="section-title">Proyectos seleccionados</h2>
+          <p class="section-subtitle">
+            Una muestra de soluciones que combinan datos, software y conocimiento del negocio.
+          </p>
         </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="https://github.com/ivanpalenciab"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg></a></li>
+
+        <div class="projects-stack">
           
-          <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ivanpalenciab/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-          </svg></a></li>
+          <!-- PROYECTO 1: Sistema de Analítica para la Circularidad -->
+          <article class="project-card" aria-labelledby="proj-1-title">
+            <div class="project-preview">
+              <img src="assets/images/cirkucore-interfaz.png" alt="Interfaz de la plataforma CirkuCore - Sistema de analítica para la circularidad" class="project-image" loading="lazy">
+            </div>
 
-          <li class="ms-3"><a class="text-muted" href="https://twitter.com/iapalenciab"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-          </svg></a></li>
+            <div class="project-story">
+              <div class="project-header-meta">
+                <span class="project-type">Sistemas de Información &amp; Circularidad</span>
+                <span class="project-status badge--status">Demo disponible</span>
+              </div>
+
+              <h3 id="proj-1-title" class="project-title">Sistema de Analítica para la Circularidad</h3>
+              <p class="project-summary">
+                Plataforma de información y analítica orientada a la trazabilidad del ciclo de vida de los materiales, monitoreo de flujos y valorización de residuos empresariales.
+              </p>
+
+              <div class="project-steps">
+                <div class="project-step-item">
+                  <span class="project-step-label">Problema:</span>
+                  <span class="project-step-desc">Falta de trazabilidad y control sobre el ciclo de vida de los materiales, los manifiestos de residuos y el cumplimiento de metas de reducción y reutilización. A esto se suma la limitada capacidad para identificar las causas y áreas responsables de una mayor generación de residuos, dificultando la implementación de acciones de mejora efectivas.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Solución:</span>
+                  <span class="project-step-desc">Desarrollo de una arquitectura de datos que permite registrar y relacionar las entradas de materias primas, los productos generados, las salidas y el aprovechamiento de residuos, facilitando la trazabilidad del ciclo de vida de los materiales y el seguimiento de indicadores como tasas de valorización y aprovechamiento.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Impacto:</span>
+                  <span class="project-step-desc"><strong>Trazabilidad integral y control operativo</strong>, permitiendo auditar el flujo de materiales, identificar focos críticos de generación de residuos y fundamentar decisiones estratégicas de circularidad con datos verificables.</span>
+                </div>
+              </div>
+
+              <div class="project-techs">
+                <span class="tech-chip">Go</span>
+                <span class="tech-chip">PostgreSQL</span>
+                <span class="tech-chip">Angular</span>
+                <span class="tech-chip">Docker</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://cirkucoredemo.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--accent" style="font-size: 0.85rem; padding: 0.55rem 1.25rem;">
+                  Consultar demo
+                  <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROYECTO 2: Plataforma de Analítica Empresarial -->
+          <article class="project-card project-card--reverse" aria-labelledby="proj-2-title">
+            <div class="project-preview">
+              <img src="assets/images/project-enterprise-analytics.svg" alt="Mockup de la interfaz de la Plataforma de Analítica Empresarial" class="project-image" loading="lazy">
+            </div>
+
+            <div class="project-story">
+              <div class="project-header-meta">
+                <span class="project-type">Data Engineering &amp; BI</span>
+                <span class="project-status">Proyecto interno</span>
+              </div>
+
+              <h3 id="proj-2-title" class="project-title">Plataforma de Analítica Empresarial</h3>
+              <p class="project-summary">
+                Sistema integral de información orientado a la consolidación, gestión y análisis continuo del desempeño corporativo.
+              </p>
+
+              <div class="project-steps">
+                <div class="project-step-item">
+                  <span class="project-step-label">Problema:</span>
+                  <span class="project-step-desc">Datos dispersos entre hojas de cálculo aisladas y bases transaccionales, impidiendo un cálculo oportuno de indicadores estratégicos.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Solución:</span>
+                  <span class="project-step-desc">Diseño de una tubería de procesamiento y modelado relacional con capa analítica centralizada para estandarizar la información.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Impacto:</span>
+                  <span class="project-step-desc"><strong>Información disponible en tiempo real</strong> mediante dashboards interactivos, reduciendo drásticamente el tiempo de elaboración de reportes mensuales.</span>
+                </div>
+              </div>
+
+              <div class="project-techs">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">SQL</span>
+                <span class="tech-chip">PostgreSQL</span>
+                <span class="tech-chip">Polars</span>
+                <span class="tech-chip">Dash</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://indicadores.estrategiasfractal.com/" class="project-link">
+                  Consultar sobre esta solución
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROYECTO 3: Predicción del Ticket de Compra mediante Machine Learning -->
+          <article class="project-card" aria-labelledby="proj-3-title">
+            <div class="project-preview">
+              <img src="assets/images/project-predictive-models.svg" alt="Visualización de predicción del ticket de compra y evaluación del modelo de Machine Learning" class="project-image" loading="lazy">
+            </div>
+
+            <div class="project-story">
+              <div class="project-header-meta">
+                <span class="project-type">Machine Learning &amp; Comportamiento del Consumidor</span>
+                <span class="project-status badge--status">Publicación Científica</span>
+              </div>
+
+              <h3 id="proj-3-title" class="project-title">Predicción del Ticket de Compra del Cliente</h3>
+              <p class="project-summary">
+                Desarrollo y validación empírica de modelos de Machine Learning para predecir el monto de compra individual y patrones transaccionales futuros a partir del historial del cliente.
+              </p>
+
+              <div class="project-steps">
+                <div class="project-step-item">
+                  <span class="project-step-label">Problema:</span>
+                  <span class="project-step-desc">Dificultad para estimar el valor monetario de las transacciones futuras de los clientes debido a la alta variabilidad en los hábitos de consumo, la dispersión temporal de las compras y la falta de modelos capaces de anticipar el gasto individual.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Solución:</span>
+                  <span class="project-step-desc">Diseño de un flujo integral de Machine Learning que incluye depuración de transacciones históricas, ingeniería de características (frecuencia, recencia, montos previos y estacionalidad) y entrenamiento comparativo de modelos predictivos con validación rigurosa.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Impacto:</span>
+                  <span class="project-step-desc"><strong>Modelo validado empíricamente y publicado en revista científica indexada (SciELO)</strong>, demostrando alta precisión predictiva para anticipar el potencial de compra, personalizar ofertas y optimizar decisiones comerciales basadas en datos.</span>
+                </div>
+              </div>
+
+              <div class="project-techs">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-learn</span>
+                <span class="tech-chip">Pandas</span>
+                <span class="tech-chip">NumPy</span>
+                <span class="tech-chip">Machine Learning</span>
+                <span class="tech-chip">Feature Engineering</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/ivanpalenciab/Prediccion_comportamiento_cliente" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="font-size: 0.85rem; padding: 0.55rem 1.15rem;">
+                  <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  Consultar repositorio
+                </a>
+                <a href="https://www.scielo.cl/scielo.php?pid=S0718-50062025000400073&script=sci_arttext&tlng=en" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 0.85rem; padding: 0.55rem 1.15rem;">
+                  <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                  Consultar artículo científico
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROYECTO 4: APIs y Arquitectura de Integración de Datos -->
+         <!-- <article class="project-card project-card--reverse" aria-labelledby="proj-4-title">
+            <div class="project-preview">
+              <img src="assets/images/project-data-apis.svg" alt="Diagrama de arquitectura de microservicios y respuestas JSON de la API de datos" class="project-image" loading="lazy">
+            </div>
+
+            <div class="project-story">
+              <div class="project-header-meta">
+                <span class="project-type">Backend &amp; Data Services</span>
+                <span class="project-status">En desarrollo</span>
+              </div>
+
+              <h3 id="proj-4-title" class="project-title">APIs y Arquitectura de Integración</h3>
+              <p class="project-summary">
+                Construcción de servicios web y endpoints especializados en ingesta, validación de esquemas y suministro de datos limpios a aplicaciones cliente.
+              </p>
+
+              <div class="project-steps">
+                <div class="project-step-item">
+                  <span class="project-step-label">Problema:</span>
+                  <span class="project-step-desc">Múltiples sistemas externos alimentaban datos en formatos inconsistentes, generando errores silenciosos en la base de datos central.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Solución:</span>
+                  <span class="project-step-desc">Desarrollo de una API asíncrona en FastAPI con validación estricta de contratos (Pydantic), autenticación segura y procesamiento de lotes en memoria.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Impacto:</span>
+                  <span class="project-step-desc"><strong>Interoperabilidad confiable</strong> con tiempos de respuesta inferiores a 30 ms y eliminación de registros corruptos en el almacén de datos.</span>
+                </div>
+              </div>
+
+              <div class="project-techs">
+                <span class="tech-chip">FastAPI</span>
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Pydantic</span>
+                <span class="tech-chip">PostgreSQL</span>
+                <span class="tech-chip">APIs REST</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contacto" class="project-link">
+                  Consultar sobre esta solución
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>-->
+
+
+          <!-- PROYECTO 5: Sistema de Información y Soporte a la Decisión Agrícola -->
+          <!--<article class="project-card" aria-labelledby="proj-5-title">
+            <div class="project-preview">
+              <img src="assets/images/project-agriculture-decision.svg" alt="Interfaz de soporte a la decisión agronómica y análisis de márgenes para productores" class="project-image" loading="lazy">
+            </div>
+
+            <div class="project-story">
+              <div class="project-header-meta">
+                <span class="project-type">Sistemas de Decisión &amp; Agro</span>
+                <span class="project-status">Proyecto de investigación</span>
+              </div>
+
+              <h3 id="proj-5-title" class="project-title">Sistema de Soporte a la Decisión Agrícola</h3>
+              <p class="project-summary">
+                Diseño conceptual y prototipado de un sistema de información y soporte a la decisión para pequeños productores agrícolas en regiones productivas.
+              </p>
+
+              <div class="project-steps">
+                <div class="project-step-item">
+                  <span class="project-step-label">Problema:</span>
+                  <span class="project-step-desc">Productores tomando decisiones críticas de siembra y venta a intermediarios sin acceso a datos climáticos ni cotizaciones mayoristas en tiempo real.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Solución:</span>
+                  <span class="project-step-desc">Integración de variables agroclimáticas, histórico de precios en centros de abastecimiento y algoritmos sencillos de recomendación de ventanas de cosecha.</span>
+                </div>
+                <div class="project-step-item">
+                  <span class="project-step-label">Impacto:</span>
+                  <span class="project-step-desc"><strong>Empoderamiento comercial</strong> del pequeño agricultor, con modelos de rentabilidad que proyectan un incremento en margen neto de hasta un 34% al negociar con información transparente.</span>
+                </div>
+              </div>
+
+              <div class="project-techs">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Modelos de Decisión</span>
+                <span class="tech-chip">SQL</span>
+                <span class="tech-chip">Dash</span>
+                <span class="tech-chip">Análisis Socioeconómico</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/ivanpalenciab/prediccion_productosagro_app" class="project-link">
+                  Consultar sobre esta solución
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>-->
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: HABILIDADES TÉCNICAS (BADGES & CATEGORÍAS)                -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: SKILLS -->
+    <section id="habilidades" class="section section--alt" aria-label="Habilidades técnicas">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Competencias</div>
+          <h2 class="section-title">Habilidades y Tecnologías</h2>
+          <p class="section-subtitle">
+            Herramientas dominadas para construir soluciones sólidas de extremo a extremo, agrupadas por su función práctica.
+          </p>
+        </div>
+
+        <div class="skills-grid">
           
-          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/ivanpalencia.col/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </svg></a></li>
+          <!-- Lenguajes -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+              <h3 class="skill-category-title">Lenguajes</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Go</span>
+              <span class="skill-badge">HTML5 / CSS3</span>
+            </div>
+          </div>
 
-          <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/ivanpalenciab"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-          </svg></a></li>
-          <i class="bi bi-instagram"></i>
-        </ul>
-      </footer>
+          <!-- Data & Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+              <h3 class="skill-category-title">Data &amp; Analytics</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">Polars</span>
+              <span class="skill-badge">Estadística Aplicada</span>
+              <span class="skill-badge">Análisis Exploratorio (EDA)</span>
+              <span class="skill-badge">Machine Learning</span>
+              <span class="skill-badge">Modelado Dimensional</span>
+            </div>
+          </div>
 
-    <!--Here Finish the Footer-->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+          <!-- Databases -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+              </svg>
+              <h3 class="skill-category-title">Bases de Datos</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">SQL Relacional</span>
+              <span class="skill-badge">Diseño de Esquemas</span>
+              <span class="skill-badge">Optimización de Consultas</span>
+            </div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+              </svg>
+              <h3 class="skill-category-title">Backend</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">Go Backend</span>
+              <span class="skill-badge">Angular</span>
+              <span class="skill-badge">APIs REST</span>
+              <span class="skill-badge">Pydantic</span>
+              <span class="skill-badge">Arquitectura de Servicios</span>
+            </div>
+          </div>
+
+          <!-- Visualization & BI -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+              </svg>
+              <h3 class="skill-category-title">Visualización &amp; BI</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Dash (Plotly)</span>
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Data Storytelling</span>
+              <span class="skill-badge">KPIs Ejecutivos</span>
+              <span class="skill-badge">Tableros Interactivos</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <h3 class="skill-category-title">DevOps &amp; Herramientas</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Entornos Reproducibles</span>
+              <span class="skill-badge">Linux Básico</span>
+            </div>
+          </div>
+
+          <!-- AI & Agentes -->
+          <div class="skill-category-card" style="grid-column: 1 / -1;">
+            <div class="skill-header">
+              <svg class="skill-header-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              <h3 class="skill-category-title">Inteligencia Artificial &amp; Nuevas Interfaces</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Integración de LLMs</span>
+              <span class="skill-badge">RAG (Retrieval-Augmented Generation)</span>
+              <span class="skill-badge">Agentes Autónomos</span>
+              <span class="skill-badge">Automatización de Flujos de Conocimiento</span>
+              <span class="skill-badge">Prompt Engineering Estructurado</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: EXPERIENCIA LABORAL (TIMELINE PROFESIONAL)                -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: EXPERIENCE -->
+    <section id="experiencia" class="section" aria-label="Experiencia laboral">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Trayectoria</div>
+          <h2 class="section-title">Experiencia Profesional</h2>
+          <p class="section-subtitle">
+            Historial de impacto construyendo sistemas de información, optimizando procesos y garantizando el rigor financiero en las organizaciones.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Hito 1: Especialista en Soluciones de Datos e Información -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Analista &amp; Desarrollador de Soluciones de Información</h3>
+                  <div class="timeline-org">Gestión de Datos y Procesos Empresariales</div>
+                </div>
+                <span class="timeline-period">Mar 2025 — Ago 2026</span>
+              </div>
+
+              <p class="timeline-desc">
+                Liderazgo en el diseño, desarrollo e implementación de soluciones analíticas y sistemas de información a medida, articulando requerimientos estratégicos con arquitecturas técnicas en Python y bases relacionales.
+              </p>
+
+              <div class="timeline-responsibilities">
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Modelado, consolidación y mantenimiento de bases de datos relacionales para centralizar registros dispersos.</span>
+                </div>
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Construcción de dashboards de seguimiento operativo y financiero orientados a comités de dirección.</span>
+                </div>
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Automatización de rutinas de conciliación de información que consumían horas de trabajo manual.</span>
+                </div>
+              </div>
+
+              <!-- Logro de Auditoría Financiera / Prevención de Pérdidas -->
+              <div class="timeline-achievement">
+                <svg class="achievement-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <div class="achievement-text">
+                  <strong>Logro clave en control financiero y auditoría:</strong>
+                  Mediante el análisis y cruce sistemático de información financiera y registros de vinculación laboral, identifiqué pagos recurrentes emitidos a empleados que ya no pertenecían a la organización. Este hallazgo motivó una reestructuración inmediata en los procesos de validación entre áreas y evitó pérdidas económicas continuas para la entidad.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Hito 2: Ciencia de Datos & Machine Learning -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Científico de Datos &amp; Machine Learning</h3>
+                  <div class="timeline-org">Analítica Avanzada &amp; Modelado Predictivo</div>
+                </div>
+                <span class="timeline-period">Feb 2023 — Ene 2025</span>
+              </div>
+
+              <p class="timeline-desc">
+                Desarrollo de soluciones de analítica avanzada de extremo a extremo, integrando ingeniería y transformación de datos, modelado estadístico y Machine Learning para convertir datos empresariales en modelos predictivos y herramientas de apoyo a la toma de decisiones.
+              </p>
+
+              <div class="timeline-responsibilities">
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Diseño y desarrollo de modelos predictivos para series temporales, identificando tendencias, patrones y comportamientos históricos para generar pronósticos y escenarios de apoyo a la planificación.</span>
+                </div>
+
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Implementación de modelos de aprendizaje supervisado para problemas de predicción y clasificación, desde la construcción de variables hasta la evaluación y validación del desempeño.</span>
+                </div>
+
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Aplicación de técnicas de aprendizaje no supervisado para descubrir patrones, segmentar información y encontrar estructuras relevantes en conjuntos de datos sin etiquetas.</span>
+                </div>
+
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Construcción del pipeline analítico completo: adquisición, limpieza, transformación, ingeniería de variables, entrenamiento, evaluación y preparación de modelos para su integración en soluciones de datos.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: SERVICIOS ("¿QUÉ PUEDO CONSTRUIR PARA TU EMPRESA?")       -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: SERVICES -->
+    <section id="servicios" class="section section--alt" aria-label="Servicios profesionales">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Oferta Comercial</div>
+          <h2 class="section-title">¿Qué puedo construir para tu empresa?</h2>
+          <p class="section-subtitle">
+            Soluciones adaptadas a la escala de tu organización: desde tableros de control ejecutivos hasta automatizaciones avanzadas y servicios backend.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Servicio 1: Dashboards & BI -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Dashboards &amp; Business Intelligence</h3>
+            <p class="service-desc">
+              Transformación de datos dispersos en tableros interactivos y métricas visuales clave que permiten entender el negocio en segundos.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Indicadores estratégicos y operativos (KPIs)
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Dashboards en Dash (Python) o Power BI
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Filtros interactivos y exportación de datos
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+          <!-- Servicio 2: Data Analytics -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Data Analytics &amp; Diagnóstico</h3>
+            <p class="service-desc">
+              Análisis cuantitativo profundo para descubrir patrones de comportamiento, anomalías, oportunidades de ahorro y áreas de mejora.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Auditoría analítica de fugas financieras
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Detección de patrones y correlaciones
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Modelos predictivos de apoyo a la decisión
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+          <!-- Servicio 3: Sistemas de Información -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Sistemas de Información a Medida</h3>
+            <p class="service-desc">
+              Diseño y programación de aplicaciones orientadas a registrar, consolidar y gestionar procesos clave de la operación empresarial.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Bases de datos optimizadas (PostgreSQL)
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Sistemas de soporte a la decisión
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Interfaces limpias, sin sobrecarga técnica
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+          <!-- Servicio 4: APIs & Data Integration -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">APIs &amp; Data Integration</h3>
+            <p class="service-desc">
+              Conexión entre diferentes aplicaciones, software contable, ERPs y plataformas externas mediante APIs REST seguras y de alto desempeño.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                APIs rápidas y documentadas con FastAPI
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Tuberías de ingesta continua de datos
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Validación de esquemas y control de errores
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+          <!-- Servicio 5: Automatización -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Automatización de Procesos</h3>
+            <p class="service-desc">
+              Eliminación de tareas repetitivas mediante scripts y flujos automatizados que liberan horas de trabajo administrativo y minimizan errores.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Procesamiento automatizado de archivos Excel y CSV
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Alertas automáticas de desvíos o incidencias
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Generación y distribución periódica de reportes
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+          <!-- Servicio 6: AI & Soluciones Inteligentes -->
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">AI &amp; Soluciones Inteligentes</h3>
+            <p class="service-desc">
+              Integración de modelos de lenguaje y sistemas RAG para interactuar con la información interna y agilizar consultas documentales.
+            </p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Sistemas RAG sobre documentación interna
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Agentes para automatizar flujos de trabajo
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Consultas en lenguaje natural a bases de datos
+              </div>
+            </div>
+            <a href="#contacto" class="btn btn--secondary service-cta">Cotizar proyecto</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: CÓMO TRABAJO (METODOLOGÍA EN 5 PASOS)                     -->
+    <!-- ================================================================== -->
+    <section class="section" aria-label="Cómo trabajo">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Metodología</div>
+          <h2 class="section-title">Cómo trabajo</h2>
+          <p class="section-subtitle">
+            Un proceso estructurado para garantizar que cada línea de código y cada modelo respondan a un objetivo de negocio verificable.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          
+          <div class="process-card">
+            <span class="process-number">01</span>
+            <h3 class="process-step-title">Entender</h3>
+            <p class="process-step-desc">
+              Comprender el problema a fondo, el contexto operativo y los objetivos económicos antes de escribir una sola línea de código.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">02</span>
+            <h3 class="process-step-title">Datos</h3>
+            <p class="process-step-desc">
+              Identificar las fuentes, depurar inconsistencias, diseñar el esquema relacional y asegurar la calidad de la información base.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">03</span>
+            <h3 class="process-step-title">Construir</h3>
+            <p class="process-step-desc">
+              Desarrollar la solución técnica (APIs, pipelines, tableros o modelos) con código modular, limpio y bien documentado.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">04</span>
+            <h3 class="process-step-title">Analizar</h3>
+            <p class="process-step-desc">
+              Transformar los datos procesados en conclusiones claras, visualizaciones intuitivas y recomendaciones accionables.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">05</span>
+            <h3 class="process-step-title">Mejorar</h3>
+            <p class="process-step-desc">
+              Medir el impacto en la operación, validar la adopción de los usuarios e iterar la herramienta para maximizar su valor continuo.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN DE IMPACTO / MANIFIESTO                                    -->
+    <!-- ================================================================== -->
+    <section class="section section--dark" aria-label="Manifiesto de impacto">
+      <div class="container">
+        <div class="impact-box">
+          <span class="impact-tag">Filosofía de Trabajo</span>
+          <blockquote class="impact-quote">
+            "No construyo dashboards decorativos. Construyo herramientas para tomar mejores decisiones."
+          </blockquote>
+          <p class="impact-desc">
+            Los datos solo tienen valor cuando reducen la incertidumbre, mitigan pérdidas y hacen que las organizaciones operen con mayor certeza y agilidad.
+          </p>
+          <a href="#contacto" class="btn btn--accent">Iniciar una conversación</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+    <!-- SECCIÓN: CONTACTO & CONVERSIÓN                                     -->
+    <!-- ================================================================== -->
+    <!-- EDITABLE SECTION: CONTACT -->
+    <section id="contacto" class="section section--alt" aria-label="Contacto">
+      <div class="container">
+        
+        <div class="contact-wrapper">
+          <div class="section-tag">Conversación &amp; Oportunidades</div>
+          
+          <h2 class="contact-headline">
+            ¿Tienes un problema que pueda resolverse con datos o tecnología?
+          </h2>
+
+          <p class="contact-sub">
+            Hablemos sobre tu proyecto, producto o próxima oportunidad laboral. Con gusto revisamos cómo mis capacidades pueden aportar valor a tu organización.
+          </p>
+
+          <!-- Canales de Contacto Directo -->
+          <div class="contact-channels">
+            
+            <!-- Email (mailto:) -->
+            <a href="mailto:ivanpalenciab@gmail.com" class="contact-card" aria-label="Enviar correo a Ivan Palencia">
+              <div class="contact-icon" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="contact-type">Correo Electrónico</span>
+              <!-- REEMPLAZAR_EMAIL_AQUI -->
+              <span class="contact-detail">ivanpalenciab.dev@gmail.com</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ivanpalenciab/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Perfil de LinkedIn de Ivan Palencia">
+              <div class="contact-icon" aria-hidden="true">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.75-.79 1.75-1.76s-.78-1.75-1.75-1.75a1.75 1.75 0 1 0 0 3.51m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                </svg>
+              </div>
+              <span class="contact-type">Red Profesional</span>
+              <!-- REEMPLAZAR_LINKEDIN_AQUI -->
+              <span class="contact-detail">linkedin.com/in/ivanpalencia</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/ivanpalenciab" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Perfil de GitHub de Ivan Palencia">
+              <div class="contact-icon" aria-hidden="true">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <span class="contact-type">Repositorios &amp; Código</span>
+              <span class="contact-detail">github.com/ivanpalenciab</span>
+            </a>
+
+          </div>
+
+          <div class="contact-meta-row">
+            <div class="contact-location-pill">
+              <svg style="width: 18px; height: 18px; color: var(--color-accent-light);" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Ubicación: <strong>Colombia</strong></span>
+            </div>
+            <span>•</span>
+            <span>Zona horaria: <strong>GMT-5 (COT)</strong></span>
+            <span>•</span>
+            <span>Disponibilidad: <strong>Inmediata / Consultoría</strong></span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================================================================== -->
+  <!-- FOOTER MINIMALISTA Y PROFESIONAL                                     -->
+  <!-- ==================================================================== -->
+  <!-- EDITABLE SECTION: FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-name">Ivan Palencia</div>
+          <div class="footer-position">Data · Software · Analytics</div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <a href="#sobre-mi" class="footer-link">Sobre mí</a>
+          <a href="#proyectos" class="footer-link">Proyectos</a>
+          <a href="#habilidades" class="footer-link">Habilidades</a>
+          <a href="#experiencia" class="footer-link">Experiencia</a>
+          <a href="#servicios" class="footer-link">Servicios</a>
+          <a href="#contacto" class="footer-link">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Ivan Palencia. Todos los derechos reservados.
+        </div>
+        
+      </div>
+
+    </div>
+  </footer>
+
+</body>
 </html>
